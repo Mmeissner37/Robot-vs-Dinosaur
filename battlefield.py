@@ -8,19 +8,17 @@ class Battlefield:
 
     def run_game(self):
         print("Let's get ready to rumble!")
-        pass
+       
 
     def display_welcome(self):
-        print("Welcome to the ultimate face off of Robot vs Dinosaur!")
-        pass
+        print("Welcome to the ultimate face off of the certified circuit board, Bee Boop, versus the terrifying stegosarus, Thunder Dome!")
+   
 
     def battle_phase(self):
-        
-        print("Next round!")
-        robot.health
+        pass
 
     def display_winner(self):
-        print("Ding ding ding!! We have a new Champion! Congratulations Thunder Foot!")
+        print("Ding ding ding!! We have a new Champion! Congratulations Thunder Dome!")
 
 
 

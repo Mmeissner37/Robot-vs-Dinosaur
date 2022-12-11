@@ -1,7 +1,7 @@
 class Weapon:
-    def __init__(self) -> None:
-        self.name = "Battle Axe"
-        self.attack_power = 15 
+    def __init__(self, str_name, int_attack_power) -> None:
+        self.name = str_name
+        self.attack_power = int_attack_power
         pass
 
 
