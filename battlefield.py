@@ -1,3 +1,7 @@
+from robot import Robot
+from dinosaur import Dinosaur
+
+
 class Battlefield:
     def __init__(self):
         pass
@@ -11,10 +15,12 @@ class Battlefield:
         pass
 
     def battle_phase(self):
-        pass
+        
+        print("Next round!")
+        robot.health
 
     def display_winner(self):
-        print("")
+        print("Ding ding ding!! We have a new Champion! Congratulations Thunder Foot!")
 
 
 
