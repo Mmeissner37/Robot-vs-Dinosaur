@@ -1,16 +1,16 @@
+
+
 class Dinosaur:
-    def __init__(self, name, attack_power) -> None:
+    def __init__(self) -> None:
         self.name = "Thunder Dome"
         self.attack_power = 20
         self.health = 100 
         pass
 
 
-    def attack(self, robot):
-        Dinosaur.attack = 20
-        print("Thunder Done has landed", Dinosaur.attack, "damage to Bee Boop!")
-
-
-print(Dinosaur.attack)
+    def attack(self, Robot):
+        self.attack_power -= Robot.health
+        print("Thunder Done has landed", Dinosaur.attack_power, "damage to Bee Boop!")
+        pass
 
 
