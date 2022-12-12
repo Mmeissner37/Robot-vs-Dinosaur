@@ -19,15 +19,22 @@ class Battlefield:
 
 
     def battle_phase(self):
-        print("Let's begin!")  #I can't figure out how to begin. Every time I add Robot.attack I get an error saying it doesn't exist
-        print(Dinosaur.name, "just attacked with", Dinosaur.attack_power, "damage to", Robot.name, "!")
-        Robot.health = Robot.health - Dinosaur.attack_power
-        print(Robot.name, "has", Robot.health, "health remaining.")
-
-
+        print("Let's begin!")  
+        print("")
+        while Robot.health != 0:
+            print(Dinosaur.name, "just attacked with", Dinosaur.attack_power, "damage to", Robot.name,"!")
+            Robot.health = Robot.health - Dinosaur.attack_power
+            print(Robot.name, "has", Robot.health, "health remaining.")
+            print("")
+            print(Robot.name, "attacks", Dinosaur.name, "with", Weapon.name, "for", Weapon.attack_power, "damage.")
+            Dinosaur.health = Dinosaur.health - Weapon.attack_power 
+            print(Dinosaur.name, "has", Dinosaur.health, "health remaining.")
+            print("")
+                   
 
     def display_winner(self):
         print("Ding ding ding!! We have a new Champion! Congratulations Thunder Dome!")
+        print("")
 
 
 
