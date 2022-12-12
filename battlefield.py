@@ -12,16 +12,17 @@ class Battlefield:
         pass
 
     def run_game(self):
-        print("Let's get ready to rumble!")
+        print("Let's get ready to rumble!") 
 
     def display_welcome(self):
         print("Welcome to Battlefield! Tonight we have the ultimate face off of the chilling circuit-board, Bee Boop, versus the terrifying stegosarus, Thunder Dome!")
-        pass
+
 
     def battle_phase(self):
         print("Let's begin!")  #I can't figure out how to begin. Every time I add Robot.attack I get an error saying it doesn't exist
-        print(Dinosaur.name, "just attacked with", Dinosaur.attack, "damage to", Robot.name)
-        #print(Robot.name, "has", {Robot.health - Dinosaur.attack}, "health left!")
+        print(Dinosaur.name, "just attacked with", Dinosaur.attack_power, "damage to", Robot.name, "!")
+        Robot.health = Robot.health - Dinosaur.attack_power
+        print(Robot.name, "has", Robot.health, "health remaining.")
 
 
 
