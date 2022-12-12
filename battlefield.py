@@ -28,10 +28,14 @@ class Battlefield:
             Robot.health = Robot.health - Dinosaur.attack_power 
             print(Robot.name, "has", Robot.health, "health remaining.")
             print("")
+            if Robot.health == 0 or Dinosaur.health == 0:
+                break
             Robot.attack = print(Robot.name, "attacks", Dinosaur.name, "with", Weapon.name, "for", Weapon.attack_power, "damage.")
             Dinosaur.health = Dinosaur.health - Weapon.attack_power 
             print(Dinosaur.name, "has", Dinosaur.health, "health remaining.")
             print("")
+            if Robot.health == 0 or Dinosaur.health == 0:
+                continue 
 
 
     def display_winner(self):
