@@ -14,6 +14,10 @@ class Battlefield:
     def run_game(self):
         print("")
         print("Let's get ready to rumble!") 
+        self.display_welcome()
+        self.battle_phase()
+        self.display_winner()
+
 
     def display_welcome(self):
         print("")
